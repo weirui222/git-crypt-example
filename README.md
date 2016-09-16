@@ -1,4 +1,4 @@
-# Git-Cypt Instructions
+# Git-Crypt Instructions
 
 - Install [Git-Crypt]
 ```sh
