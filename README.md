@@ -8,11 +8,15 @@ git-crypt init
 ```
 - Add this .gitattributes file to the directory you want encrypted
 ```
-* filter=git-crypt diff=git-crypt
-.gitattributes !filter !diff
+ * filter=git-crypt diff=git-crypt
+ .gitattributes !filter !diff
 ```
 - Add files to your encryption directory
 - Git add and commit the files
+```
+git add -A
+git commit -m "Added some files to be encrypted"
+```
 - At this point you should still be able to read the contents of the files in the encrypted directory; You can lock them with:
 ```
 git-crypt lock
@@ -23,4 +27,6 @@ git-crypt lock
 git-crypt unlock ./crypt_key
 ```
 
+## NOTES
+- You must have a clean working directory (git) in order to lock or unlock encrypted files.
 [Git-Crypt]: https://www.agwa.name/projects/git-crypt/
