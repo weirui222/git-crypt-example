@@ -1,6 +1,10 @@
 # Git-Cypt Instructions
 
 - Install [Git-Crypt]
+```sh
+brew install git-crypt # OSX
+apt-get install git-crypt # Ubuntu/Debian
+```
 - Move into the root of your repo and initialize git-crypt
 ```
 cd repo
